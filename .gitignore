@@ -27,6 +27,7 @@ proguard/
 
 # Intellij IDEA
 *.iml
+.idea
 
 # Mac files
 *.DS_Store

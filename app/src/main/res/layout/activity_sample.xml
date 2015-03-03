@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:coolswitcher="http://schemas.android.com/apk/res-auto"
 		xmlns:tools="http://schemas.android.com/tools"
 		android:id="@+id/main_layout"
 		android:layout_width="match_parent"
@@ -11,7 +12,7 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="0.5">
 
-		<FrameLayout
+		<com.etaoin.coolswitcher.TargetFrameLayout
 				android:layout_width="match_parent"
 				android:layout_height="match_parent">
 
@@ -31,7 +32,7 @@
 
 			</LinearLayout>
 
-		</FrameLayout>
+		</com.etaoin.coolswitcher.TargetFrameLayout>
 
 		<FrameLayout
 				android:layout_width="wrap_content"
@@ -51,11 +52,11 @@
 						android:orientation="vertical">
 
 					<TextView
+							android:id="@+id/connect_contacts_text"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:text="Connect Contacts"
 							android:layout_gravity="center_horizontal"
-							android:textColor="#ffffffff"
 							android:layout_marginBottom="20dp"
 							android:textSize="20sp"/>
 
@@ -72,16 +73,20 @@
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:layout_gravity="center_horizontal">
+
 					<ImageView
+							android:id="@+id/icon_blue"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
-							android:background="@drawable/ic_checkbox_multiple_marked_white_36dp"/>
+							android:background="@drawable/ic_checkbox_multiple_marked_black_36dp"/>
 
-					<com.etaoin.coolswitcher.CoolSwitcher
+					<com.etaoin.coolswitcher.CoolSwitch
 							android:id="@+id/cool_switcher_blue"
-							android:layout_height="30dp"
+							android:layout_height="35dp"
 							android:layout_width="60dp"
-							android:layout_marginLeft="50dp"/>
+							android:layout_marginLeft="50dp"
+							coolswitcher:disabledView="@id/disabled_view_blue"
+							coolswitcher:enabledView="@id/enabled_view_blue"/>
 
 				</LinearLayout>
 
@@ -96,7 +101,7 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="0.5">
 
-		<FrameLayout
+		<com.etaoin.coolswitcher.TargetFrameLayout
 				android:layout_width="match_parent"
 				android:layout_height="match_parent">
 
@@ -116,7 +121,7 @@
 
 			</LinearLayout>
 
-		</FrameLayout>
+		</com.etaoin.coolswitcher.TargetFrameLayout>
 
 		<FrameLayout
 				android:layout_width="wrap_content"
@@ -140,7 +145,6 @@
 							android:layout_height="wrap_content"
 							android:text="Allow Discovery"
 							android:layout_gravity="center_horizontal"
-							android:textColor="#ffffffff"
 							android:layout_marginBottom="20dp"
 							android:textSize="20sp"/>
 
@@ -160,13 +164,15 @@
 					<ImageView
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
-							android:background="@drawable/ic_checkbox_multiple_marked_white_36dp"/>
+							android:background="@drawable/ic_checkbox_multiple_marked_black_36dp"/>
 
-					<com.etaoin.coolswitcher.CoolSwitcher
+					<com.etaoin.coolswitcher.CoolSwitch
 							android:id="@+id/cool_switcher_green"
-							android:layout_height="30dp"
+							android:layout_height="35dp"
 							android:layout_width="60dp"
-							android:layout_marginLeft="50dp"/>
+							android:layout_marginLeft="50dp"
+							coolswitcher:disabledView="@id/disabled_view_green"
+							coolswitcher:enabledView="@id/enabled_view_green"/>
 
 				</LinearLayout>
 
