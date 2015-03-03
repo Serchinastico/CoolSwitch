@@ -55,6 +55,7 @@
 							android:id="@+id/connect_contacts_text"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
+							android:textColor="#333"
 							android:text="Connect Contacts"
 							android:layout_gravity="center_horizontal"
 							android:layout_marginBottom="20dp"
@@ -63,6 +64,7 @@
 					<TextView
 							android:layout_width="300dp"
 							android:layout_height="wrap_content"
+							android:textColor="#333"
 							android:text="All your phone Contacts will be automatically added to your friends list."
 							android:layout_gravity="center_horizontal"
 							android:gravity="center_horizontal"/>
@@ -144,6 +146,7 @@
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:text="Allow Discovery"
+							android:textColor="#333"
 							android:layout_gravity="center_horizontal"
 							android:layout_marginBottom="20dp"
 							android:textSize="20sp"/>
@@ -151,6 +154,7 @@
 					<TextView
 							android:layout_width="300dp"
 							android:layout_height="wrap_content"
+							android:textColor="#333"
 							android:text="Turn on to allow your phone number to be displayed in your friends' Contacts."
 							android:layout_gravity="center_horizontal"
 							android:gravity="center_horizontal"/>
