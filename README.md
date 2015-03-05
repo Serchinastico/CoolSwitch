@@ -35,10 +35,13 @@ CoolSwitch is a custom view for Android with an awesome reveal animation with su
 
 </com.serchinastico.coolswitch.TargetFrameLayout>
 ```
+# Acknowledgments
+
+Víctor Pimentel (https://github.com/victorpimentel)
 
 # License 
 ```
-Copyright 2014 Pedro Vicente Gómez Sánchez
+Copyright 2015 Sergio Gutiérrez Mota
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
