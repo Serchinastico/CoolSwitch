@@ -28,6 +28,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
+import android.widget.CompoundButton;
 import android.widget.ToggleButton;
 
 import com.nineoldandroids.animation.ObjectAnimator;
@@ -38,7 +39,7 @@ import com.nineoldandroids.animation.ObjectAnimator;
  *
  * @author Sergio Gutiérrez Mota.
  */
-public class CoolSwitch extends ToggleButton implements View.OnClickListener {
+public class CoolSwitch extends ToggleButton implements CompoundButton.OnCheckedChangeListener {
 
 	private static final long BACKGROUND_OPAQUE_TO_TRANSPARENT_ANIMATION_DURATION_MS = 200;
 	private static final long BACKGROUND_TRANSPARENT_TO_OPAQUE_ANIMATION_DURATION_MS = 200;
@@ -94,9 +95,8 @@ public class CoolSwitch extends ToggleButton implements View.OnClickListener {
 
 	private void initialize() {
 		backgroundAlpha = isChecked() ? MAX_BACKGROUND_ALPHA : MIN_BACKGROUND_ALPHA;
-
 		setBackgroundColor(Color.argb(0, 0, 0, 0));
-		setOnClickListener(this);
+		setOnCheckedChangeListener(this);
 	}
 
 	public boolean addAnimationListener(AnimationListener listener) {
@@ -141,7 +141,7 @@ public class CoolSwitch extends ToggleButton implements View.OnClickListener {
 	}
 
 	@Override
-	public void onClick(View v) {
+	public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 		setEnabled(false);
 
 		if (hasValidTargetViewIds() && !hasLoadedTargetViews()) {
