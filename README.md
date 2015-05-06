@@ -35,6 +35,23 @@ CoolSwitch is a custom view for Android with an awesome reveal animation with su
 
 </com.serchinastico.coolswitch.TargetFrameLayout>
 ```
+# Import
+You can easily include CoolSwitch in your project using your preferred build system. You just need to add the dependency from maven central, jcenter or your local artifact repository.
+* Maven:
+```xml
+<dependency>
+	<groupId>com.github.serchinastico</groupId>
+	<artifactId>coolswitch</artifactId>
+	<version>1.0.1</version>
+	<type>aar</type>
+</dependency>
+```
+* Gradle:
+```groovy
+dependencies {
+	compile 'com.github.serchinastico:coolswitch:1.0.1'
+}
+```
 # Acknowledgments
 
 Víctor Pimentel (https://github.com/victorpimentel)
