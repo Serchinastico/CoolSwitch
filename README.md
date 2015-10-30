@@ -6,7 +6,7 @@ CoolSwitch is a custom view for Android with an awesome reveal animation with su
 
 # Usage
 
-* 1. Include the switch view in your layout as usual, including the views shown when the switch is disabled and enabled. If any of the views are undefined then the animation won't play.
+* 1. Include the switch view in your layout as usual, specifying the views that will be displayed when the switch changes its state. If any of the views is undefined then the animation won't play.
 ```xml
 <com.serchinastico.coolswitch.CoolSwitch
 	android:id="@+id/cool_switch_foo"
